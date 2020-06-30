@@ -1,0 +1,11 @@
+命令--选项--参数			
+git									--显示所有命令
+git --version						--查看git版本
+git config user.name "superkk"
+git config user.email "xxx@outlook.com"
+git add								--添加文件至索引
+git status  						--查看中间状态的文件
+git commit  						--提交文件至本地仓库
+git remote  						--显示所有远程仓库
+git remote add 						--添加远程仓库
+git push    						--推送变动至远程仓库
