@@ -21,7 +21,8 @@ git diff							--查看提交差异
 
 远程版本库操作：
 git remote  						--显示所有远程仓库
-git remote add 						--添加远程仓库
+git remote add origin url			--添加远程仓库
+git remote rm origin				--删除远程仓库
 git push    						--推送变动至远程仓库
 
 克隆创建版本库：
