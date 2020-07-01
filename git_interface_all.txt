@@ -4,9 +4,27 @@ git --version						--查看git版本
 git init							--初始化本地git仓库
 git config user.name "superkk"
 git config user.email "xxx@outlook.com"
+
+文件操作：
 git add								--添加文件至索引
+git rm								--从版本库删除文件
+git mv								--将版本库中的文件重命名
+
+查询状态操作：
 git status  						--查看中间状态的文件
+
+提交操作：
 git commit  						--提交文件至本地仓库
+git log								--查看提交
+git show							--查看提交详情
+git diff							--查看提交差异
+
+远程版本库操作：
 git remote  						--显示所有远程仓库
 git remote add 						--添加远程仓库
 git push    						--推送变动至远程仓库
+
+克隆创建版本库：
+git clone respository name			--克隆版本库
+git clone -b respository name		--克隆指定分支的版本库
+
