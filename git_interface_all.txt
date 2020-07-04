@@ -29,3 +29,9 @@ git push    						--推送变动至远程仓库
 git clone respository name			--克隆版本库
 git clone -b respository name		--克隆指定分支的版本库
 
+标签操作：
+git tag -m "" tagName gitObject		--创建带有提交信息和附注的标签
+git rev-parse						--通过对象的唯一前缀查找对象的SHA1值
+git cat-file -p						--查看git对象
+
+
