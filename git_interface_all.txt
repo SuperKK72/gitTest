@@ -11,7 +11,7 @@ git rm								--从版本库删除文件
 git mv								--将版本库中的文件重命名
 
 查询状态操作：
-git status  						--查看中间状态的文件
+git status  						--查看索引状态
 
 提交操作：
 git commit  						--提交文件至本地仓库
@@ -33,5 +33,9 @@ git clone -b respository name		--克隆指定分支的版本库
 git tag -m "" tagName gitObject		--创建带有提交信息和附注的标签
 git rev-parse						--通过对象的唯一前缀查找对象的SHA1值
 git cat-file -p						--查看git对象
+
+git ls-files --stage				--查看对象库内容
+git diff							--查询工作目录中未暂存的变更
+git diff --cached					--查询已经暂存但为提交的变更
 
 
