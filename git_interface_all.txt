@@ -14,6 +14,9 @@ git ls-files --stage				--查看对象库内容
 git diff							--查询工作目录中未暂存的变更
 git diff --cached					--查询已经暂存但为提交的变更
 git checkout HEAD --filename		--恢复文件
+refs/heads/refs						--分支的符号引用
+refs/remotes/refs					--远程分支的符号引用
+refs/tags/refs						--标签的符号引用
 
 git索引：
 git add								--添加文件至索引
@@ -23,15 +26,21 @@ git rm -file						--强制删除文件
 git mv								--将版本库中的文件重命名
 git status  						--查看索引状态
 
-git提交：
+git提交：(时间轴从左向右)
 git commit  						--提交文件至本地仓库
 git commit --all					--自动暂存所有未提交的变更
-git log								--查看提交
-git show							--查看提交详情
+git log								--查看历史提交记录
+git log commitname					--查看从指定提交开始的历史记录
+git show							--查看版本库对象内容
 git diff							--查看提交差异
+HEAD								--当前分支的最近提交
+commit^n							--commit提交的第n个父提交
+commit~n							--返回父提交之前并选择上一代提交
+..									--指定分支范围
 
 分支操作：
-git branch							--列出所有分支
+git branch							--列出所有本地分支
+git branch -add						--列出所有远程分支和本地分支
 git checkout branchname				--切换当前分支
 git checkout -b branchname			--创建并检出到新分支
 git branch -d branchname			--删除非当前分支
