@@ -25,6 +25,7 @@ git rm --cached						--从索引中删除文件
 git rm -file						--强制删除文件
 git mv								--将版本库中的文件重命名
 git status  						--查看索引状态
+git reset HEAD						--撤销最近一次git-add操作，默认撤销所有add的文件
 
 git提交：(时间轴从左向右)
 git commit  						--提交文件至本地仓库
